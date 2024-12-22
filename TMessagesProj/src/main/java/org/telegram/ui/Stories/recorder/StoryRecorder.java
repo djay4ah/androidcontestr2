@@ -3316,6 +3316,10 @@ public class StoryRecorder implements NotificationCenter.NotificationCenterDeleg
             return requestAudioPermission();
         }
 
+        public boolean endlessVideo() {
+            return false;
+        }
+
         @Override
         public void onPhotoShoot() {
             if (takingPhoto || awaitingPlayer || currentPage != PAGE_CAMERA || cameraView == null || !cameraView.isInited()) {
